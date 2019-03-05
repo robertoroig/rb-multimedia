@@ -195,10 +195,18 @@ h3 {
 }
 
 
-
 .about_experience {
     text-align: center;
 }
+
+.exp_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
 
 .about_exp {
     display: flex;
@@ -231,18 +239,12 @@ h3 {
     border-radius: 20px;
 }
 
-.p30 {
-    border-radius: 20px 0px 0px 20px;
-    width:20vw;
+.p30, .p50, .p75 {
+     border-radius: 20px 0px 0px 20px;
 }
-.p50 {
-    border-radius: 20px 0px 0px 20px;
-    width:25vw;
-}
-.p75 {
-    border-radius: 20px 0px 0px 20px;
-    width:37.5vw;
-}
+.p30 {width:20vw;}
+.p50 {width:25vw;}
+.p75 {width:37.5vw;}
 
 .about_img_cover > img {
     position: relative;

@@ -5,7 +5,7 @@
 @media only screen and (min-width: 768px) {
     h2 {font-size: 4vw;}
     h3 {font-size: 3vw;}
-    p {font-size: 2vw;}
+    p {font-size: 1.5vw;}
     
     /* Barra de navegación */
     #h_title {font-size: 5vw;}
@@ -42,7 +42,50 @@
         width: 100%;
         height: 100%;
     }
+    .about_img .about_img_cover {  
+        float:left;
+        display: inline-block;
+        width: 40%;
+        padding: 3vw;
+        height: 43vw;
+    }
+    .about_name {
+        font-size: 2vw;
+    }
+    .about_description {
+        width:auto;
+        padding-left: 38vw;
+    }
+    .about_experience {
+        margin-top: 27vw;
+    }
     
+    .about_exp {
+        width: 47%;
+        margin:0.5vw;
+    }
+    .about_exp > img {
+        width: 7vw;
+    }
+    .about_bar {
+        width:20vw;
+        height:2vw;
+        margin-left: 1vw;
+        border-radius: 20px;
+    }
+    .percent {
+        width:20vw;
+        margin-left: 0;
+        border-radius: 20px;
+    }
+    .p30, .p50, .p75 {
+         border-radius: 20px 0px 0px 20px;
+    }
+    .p30 {width:6.6vw;}
+    .p50 {width:10vw;}
+    .p75 {width:15vw;}
+    
+
     /* contacto.html */
     form {
         display: flex;
@@ -76,9 +119,6 @@
         flex-grow: 1;
         padding-left:1vw;
     }
-    
-
-    
 } 
 
 /* 
@@ -109,7 +149,6 @@
     .wrapper {
         width: 100%;
         overflow: hidden;
-
     }
     .about_rb {
         font-size: 1vw;
@@ -137,6 +176,52 @@
         width: 100%;
         height: 100%;
     }
+    .about_img .about_img_cover {  
+        float:left;
+        display: inline-block;
+        width: 35%;
+        padding: 1.5vw;
+        height: 32vw;
+    }
+    .about_name {
+        font-size: 1.5vw;
+    }
+    .about_description {
+        width:auto;
+        font-size: 1.5vw;
+        padding-left: 28vw;
+    }
+    .about_description p {font-size: 1vw; }
+    
+    .about_experience {
+        font-size: 1vw;
+        margin-top: 0vw;
+    }
+    
+    .about_exp {
+        width: 47%;
+        margin:0.5vw;
+    }
+    .about_exp > img {
+        width: 4vw;
+    }
+    .about_bar {
+        width:13vw;
+        height:2vw;
+        margin-left: 1vw;
+        border-radius: 20px;
+    }
+    .percent {
+        width:13vw;
+        margin-left: 0;
+        border-radius: 20px;
+    }
+    .p30, .p50, .p75 {
+         border-radius: 20px 0px 0px 20px;
+    }
+    .p30 {width:4.3vw;}
+    .p50 {width:6.5vw;}
+    .p75 {width:9.75vw;}
 
     /* contacto.html */
     form {
