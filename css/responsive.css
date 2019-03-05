@@ -1,77 +1,35 @@
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #h_title {
-        font-size: 5vw;
-    }
-    #h_menu a {
-        font-size: 6vw;
-    }
+/* 
+    Small devices (portrait tablets and large phones, 768px and up) 
+    Para iPad y mas grande
+*/
+@media only screen and (min-width: 768px) {
+    h2 {font-size: 4vw;}
+    h3 {font-size: 3vw;}
+    p {font-size: 2vw;}
     
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    .input_text {
-        width: 30%;
-        height: 10%;
-        padding: 1vw;
-        margin: 1vw;
-        flex-grow: 1;
-        
-    }
-    .input_textarea {
-        width: 70%;
-        flex-grow: 1;
-    }
-    .input_button {
-        width: 20vw;
-        padding: 1vw;
-        margin-left: 0;
-        margin: 1vw;
-        
-    }
-    .title_contacto {
-        font-size: 1.5vw;
-        width:100%;
-        flex-grow: 1;
-    }
+    /* Barra de navegación */
+    #h_title {font-size: 5vw;}
+    #h_menu a {font-size: 6vw;}
     
-    
-    h2 {
-        font-size: 4vw;
-    }
-    h3 {
-        font-size: 3vw;
-    }
-    p {
-        font-size: 2vw;
-    }
+    /* about.html */
     .wrapper {
         width: 100%;
-        border: 1px solid black;
         overflow: hidden;
     }
     .about_rb {
         font-size: 1.5vw;
         padding:2vw;
         padding-top:0;
+        padding-left: 0;
         float:left;
         display: inline-block;
         width: 50%;
     }
-
     .map {
         display: inline-block;
         width: 45%;
-        padding-bottom:56.25%;
+        padding-bottom:40%;
+        padding-right: 0;
         margin: 2vw;
         overflow: hidden;
         position:relative;
@@ -85,40 +43,7 @@
         height: 100%;
     }
     
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #h_title {
-        font-size: 3vw;
-    }
-    #h_menu {
-        top: 10vw;
-        right: 4vw;
-    }
-    #h_menu a {
-        font-size: 4vw;
-    }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        margin: 2vw;
-        padding: 2vw;
-        margin-left:10vw;
-        margin-right:10vw;
-    }
-    #h_title {
-        font-size: 2vw;
-    }
-    #h_menu {
-        top: 7vw;
-        right: 12vw;
-    }
-    #h_menu a {
-        font-size: 2vw;
-    }
+    /* contacto.html */
     form {
         display: flex;
         flex-wrap: wrap;
@@ -149,9 +74,99 @@
         font-size: 1.5vw;
         width:100%;
         flex-grow: 1;
+        padding-left:1vw;
     }
     
-    h2 {
-        font-size: 3vw;
+
+    
+} 
+
+/* 
+    Large devices (laptops/desktops, 992px and up) 
+    Para pantallas de pc en adelante
+*/
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 2vw;
+        padding: 2vw;
+        margin-left:10vw;
+        margin-right:10vw;
+    }
+    
+    h2 {font-size: 3vw;}
+    h3 {font-size: 1.25vw;}
+    p {font-size: 2vw;}
+    
+    /* Barra de navegación */
+    #h_title {font-size: 2vw;}
+    #h_menu {
+        top: 7vw;
+        right: 12vw;
+    }
+    #h_menu a {font-size: 2vw}
+    
+    /* about.html */
+    .wrapper {
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .about_rb {
+        font-size: 1vw;
+        padding:2vw;
+        padding-left: 0;
+        padding-top:0;
+        float:left;
+        display: inline-block;
+        width: 50%;
+    }
+    .map {
+        display: inline-block;
+        width: 39%;
+        padding-bottom:40%;
+        margin: 2vw;
+        padding-right: 0;
+        overflow: hidden;
+        position:relative;
+        height:0;
+    }
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* contacto.html */
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .title_contacto {
+        font-size: 1.5vw;
+        width:100%;
+        flex-grow: 1;
+        padding-left:1vw
+    }
+    .input_text {
+        width: 30%;
+        height: 10%;
+        padding: 1vw;
+        margin: 1vw;
+        flex-grow: 1;
+    }
+    .input_textarea {
+        width: 70%;
+        flex-grow: 1;
+    }
+    .input_button {
+        width: 20vw;
+        padding: 1vw;
+        margin-left: 0;
+        margin: 1vw;
     }
 } 
