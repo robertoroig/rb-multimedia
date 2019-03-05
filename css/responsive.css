@@ -1,0 +1,129 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #h_title {
+        font-size: 5vw;
+    }
+    #h_menu a {
+        font-size: 6vw;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .input_text {
+        width: 30%;
+        height: 10%;
+        padding: 1vw;
+        margin: 1vw;
+        flex-grow: 1;
+        
+    }
+    .input_textarea {
+        width: 70%;
+        flex-grow: 1;
+    }
+    .input_button {
+        width: 20vw;
+        padding: 1vw;
+        margin-left: 0;
+        margin: 1vw;
+        
+    }
+    .title_contacto {
+        font-size: 1.5vw;
+        width:100%;
+        flex-grow: 1;
+    }
+    
+    
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    .map {
+        
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #h_title {
+        font-size: 3vw;
+    }
+    #h_menu {
+        top: 10vw;
+        right: 4vw;
+    }
+    #h_menu a {
+        font-size: 4vw;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 2vw;
+        padding: 2vw;
+        margin-left:10vw;
+        margin-right:10vw;
+    }
+    #h_title {
+        font-size: 2vw;
+    }
+    #h_menu {
+        top: 7vw;
+        right: 12vw;
+    }
+    #h_menu a {
+        font-size: 2vw;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .input_text {
+        width: 30%;
+        height: 10%;
+        padding: 1vw;
+        margin: 1vw;
+        flex-grow: 1;
+        
+    }
+    .input_textarea {
+        width: 70%;
+        flex-grow: 1;
+    }
+    .input_button {
+        width: 20vw;
+        padding: 1vw;
+        margin-left: 0;
+        margin: 1vw;
+        
+    }
+    .title_contacto {
+        font-size: 1.5vw;
+        width:100%;
+        flex-grow: 1;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+} 
