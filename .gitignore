@@ -1,8 +1,4 @@
 
 *.ini
-js/Icon
-src/Icon
-src/Icon
-js/Icon
+.DS_Store
 Icon
-css/Icon
