@@ -21,8 +21,7 @@ function showMenu(x) {
         $("#h_menu").fadeOut(300);
         $("#h_menu_bkg").fadeOut(300);
         $('html, body').css({
-            overflow: 'auto',
-            height: 'auto'
+            overflow: 'auto'
         });
     }
         
@@ -30,8 +29,7 @@ function showMenu(x) {
         $("#h_menu").fadeIn(300);
         $("#h_menu_bkg").fadeIn(300);
         $('html, body').css({
-            overflow: 'hidden',
-            height: '100%'
+            overflow: 'hidden'
         });
     }
     

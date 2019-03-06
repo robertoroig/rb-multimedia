@@ -10,6 +10,10 @@
     /* Barra de navegación */
     #h_title {font-size: 5vw;}
     #h_menu a {font-size: 6vw;}
+    #nav_gradient {
+        height:18vw;
+    }
+
     
     /* about.html */
     .wrapper {
@@ -144,6 +148,13 @@
         right: 12vw;
     }
     #h_menu a {font-size: 2vw}
+    #nav_gradient {
+        height:20vw;
+        background-image: linear-gradient(to top, rgba(255,0,0,0), #FCF8D7 50%);
+    }
+    .sticky > .h_menu_icon {
+        right:24vw;
+    }
     
     /* about.html */
     .wrapper {
