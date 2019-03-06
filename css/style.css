@@ -91,6 +91,16 @@ body {
     z-index: 2;
 }
 
+.bar1 div:hover {
+    color:black;
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+}
+.bar3 div:hover {
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, -10px);
+}
+
 .change .bar1 {
     -webkit-transform: translate(0px, 8px) rotate(-45deg);
     transform: translate(0px, 8px) rotate(-45deg);
