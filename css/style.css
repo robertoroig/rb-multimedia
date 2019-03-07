@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -146,6 +146,8 @@ li {
 h1 {
     font-size: 14vw;
     color: #707070;
+    text-align: left;
+    margin-bottom: 6vw
 }
 
 p {
@@ -293,3 +295,22 @@ h3 {
 }
 
 
+
+
+
+.img_portada {
+    top:-23vw;
+    position: relative;
+    background-image: url("/src/surface.png");
+    width: calc(100% + 5.99vw);
+    height: 80vw;
+    background-position: -8vw;
+    background-size: cover;
+
+}
+
+.p_portada {
+    width: 45%;
+    position: absolute;
+    overflow: hidden;
+}

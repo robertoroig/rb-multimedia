@@ -68,6 +68,7 @@
         width: 47%;
         margin:0.5vw;
     }
+
     .about_exp > img {
         width: 7vw;
     }
@@ -146,6 +147,7 @@
     #h_menu {
         top: 7vw;
         right: 12vw;
+        text-align: right
     }
     #h_menu a {font-size: 2vw}
     #nav_gradient {
@@ -159,6 +161,26 @@
         right:24vw;
     }
     
+    /* index.html */
+    .p_portada p{
+        font-size: 1vw;
+    }
+    
+    .img_portada {
+        width: 100%;
+        height: 50vw;
+        background-position: 1vw;
+        background-size: cover;
+        margin-left:14vw;
+        background-repeat: no-repeat;
+        background-size: 80vw;
+    }
+    
+    h1 {
+        font-size: 7vw;
+        margin-top: 7vw;
+        margin-bottom: 2vw
+    }
     /* about.html */
     .wrapper {
         width: 100%;
