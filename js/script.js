@@ -60,8 +60,10 @@ function textAreaAdjust(o) {
 }
 
 //REPRODUCTOR AUDIO: Función que añade los listeners
-addEventListeners(reproductor) {
-    //reproductor.controls.children[0].addEventListener("click", repr.previousSong());
+function addEventListeners(reproductor) {
+    reproductor.controls.children[0].addEventListener("click", function() {
+        reproductor.previousSong(); 
+    });
     reproductor.controls.children[1].addEventListener("click", function() {
         reproductor.playAudio(); 
     });
