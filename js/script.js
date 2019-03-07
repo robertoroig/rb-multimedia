@@ -60,23 +60,33 @@ function textAreaAdjust(o) {
 }
 
 //REPRODUCTOR AUDIO: Función que añade los listeners
-function addEventListeners(reproductor) {
-    reproductor.controls.children[0].addEventListener("click", function() {
-        reproductor.previousSong(); 
+function addEventListeners(r) {
+    r.controls.children[0].addEventListener("click", function() {
+        r.previousSong(); 
     });
-    reproductor.controls.children[1].addEventListener("click", function() {
-        reproductor.playAudio(); 
+    r.controls.children[1].addEventListener("click", function() {
+        r.playAudio(); 
     });
-    reproductor.controls.children[2].addEventListener("click", function() {
-        reproductor.nextSong(); 
-    });
+    r.controls.children[2].addEventListener("click", function() {
+        r.nextSong();
+r   });
 
-    reproductor.audio.addEventListener("play", function(){
+    r.audio.addEventListener("play", function(){
         document.getElementById("ap_play").setAttribute('src', 'src/music/pause.png');
     });
 
-    reproductor.audio.addEventListener("pause", function(){
+    r.audio.addEventListener("pause", function(){
         document.getElementById("ap_play").setAttribute('src', 'src/music/play.png');
+    });
+    
+    r.audio.addEventListener("timeupdate", function() {
+        var elapsedTime = r.audio.currentTime;
+        var duration = r.audio.duration;
+        
+        var eMinutes = Math.floor(elapsedTime / 60);
+        var eSeconds = elapsedTime - eMinutes * 60;
+        document.getElementById("ap_playback_time").innerHTML = eMinutes + ":" + ("0" + parseInt(eSeconds)).slice(-2) + " / " + r.playlist[r.trackCount].duration;
+        document.getElementById("ap_playback_bar").style.width =(elapsedTime/duration)*100 + "%"
     });
 }
 

@@ -3,39 +3,36 @@ class ReproductorAudio {
         this.trackCount = 0;
         
         this.playlist = [{
-            "track": 0,
-            "title": "Be Alright",
+            "title": "bloodline",
             "artist": "Ariana Grande",
-            "duration": "2:58",
-            "cover": "src/music/covers/be_alright.jpg",
-            "file":"src/music/songs/be_alright.mp3",
+            "duration": "3:37",
+            "cover": "src/music/covers/bloodline.jpg",
+            "file":"src/music/songs/bloodline.mp3",
         }, {
-            "track": 1,
             "title": "Nothing Breaks Like A Heart",
             "artist": "Miley Cyrus",
             "duration": "3:37",
             "cover": "src/music/covers/nblah.png",
             "file":"src/music/songs/nblah.mp3",
         }, {
-            "track": 2,
             "title": "Low Key",
             "artist": "Mabel",
-            "duration": "03:51",
+            "duration": "3:51",
             "cover": "src/music/covers/low_key.jpg",
             "file":"src/music/songs/low_key.mp3",
         }, {
-            "track": 3,
-            "title": "Boomerang       ",
+            "title": "Boomerang",
             "artist": "Imagine Dragons",
-            "duration": "03:08",
+            "duration": "3:08",
             "cover": "src/music/covers/boomerang.jpg",
             "file":"src/music/songs/boomerang.mp3",
         }]
 
+        this.img_cover = player.firstElementChild.firstElementChild;
         this.title = player.children[1];
         this.audio = player.children[2];
-        this.controls = player.children[3];
-        this.img_cover = player.firstElementChild.firstElementChild;
+        this.controls = player.children[5];
+        
         this.setSong(this.playlist[this.trackCount].file);
     }
     
@@ -85,6 +82,7 @@ class ReproductorAudio {
         
         this.img_cover.setAttribute("alt", this.playlist[this.trackCount].title + ' - ' + this.playlist[this.trackCount].artist);
     }
+    
 }
 
 

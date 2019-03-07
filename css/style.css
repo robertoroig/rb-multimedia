@@ -362,7 +362,7 @@ h3 {
     left:12.5%;
     position:fixed;
     width:75%;
-    height: 80vw;
+    height: 65vw;
     background-color: white;
     -webkit-box-shadow: 0px -2px 47px -3px rgba(179,179,179,1);
     -moz-box-shadow: 0px -2px 47px -3px rgba(179,179,179,1);
@@ -411,10 +411,10 @@ h3 {
     position:absolute;
     display:block;
     top:6vw;
-    right: 6vw;
-    margin-left:32vw;
+    left: 32vw;
     font-weight: 600;
     text-align: left;
+    margin-right: 4vw;
 }
 
 .ap_artist {
@@ -432,4 +432,28 @@ h3 {
 
 }
 
-.ap_
+.ap_playback {
+    display: block;
+    margin-top:6vw;
+    margin-bottom: 6vw;
+    //border:2px solid black;
+    height:3px;
+    border-radius: 100px;
+    background-color: #F0F0F0;
+    text-align: center;
+    
+}
+
+.ap_playback span {
+    font-size: 3vw
+}
+
+.bar {
+    top:-7vw;
+    left:0;
+    width: 0%;
+    background-color: #707070;
+    position: relative;
+}
+
+
