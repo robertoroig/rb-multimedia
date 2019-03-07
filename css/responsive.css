@@ -8,8 +8,10 @@
     p {font-size: 1.5vw;}
     
     /* Barra de navegación */
+    
     #h_title {font-size: 5vw;}
-    #h_menu a {font-size: 6vw;}
+    #h_menu {top:15vw}
+    #h_menu a {font-size: 3vw;}
     #nav_gradient {
         height:18vw;
     }

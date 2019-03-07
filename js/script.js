@@ -20,7 +20,7 @@ function showMenu(x) {
     if($("#h_menu").is(":visible")) {
         $("#h_menu").fadeOut(300);
         $("#h_menu_bkg").fadeOut(300);
-        $('html, body').css({
+        $('body').css({
             overflow: 'auto'
         });
     }
@@ -28,7 +28,7 @@ function showMenu(x) {
     else {
         $("#h_menu").fadeIn(300);
         $("#h_menu_bkg").fadeIn(300);
-        $('html, body').css({
+        $('body').css({
             overflow: 'hidden'
         });
     }
