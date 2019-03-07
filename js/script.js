@@ -1,9 +1,16 @@
-//ALL: Cargar el header y footer
+//ALL: Cargar el header, contenido y footer
 $(function(){
     $("#header").load("header.html"); 
     $("#footer").load("footer.html");
-    
+    $("#content").load("main.html")
 });
+
+function load(url, x) {
+    showMenu(x);
+    $("#content").load(url);
+    $(window).scrollTop(0);
+    
+}
 
 //ALL: Para que haga el efecto de aparición de inicio
 $(window).on('beforeunload', function(){
@@ -16,7 +23,7 @@ $(window).on('load', function(){
 
 //ALL: Función para manejar el menu
 function showMenu(x) {
-    x.classList.toggle("change");
+    $(x).toggleClass("change");
     if($("#h_menu").is(":visible")) {
         $("#h_menu").fadeOut(300);
         $("#h_menu_bkg").fadeOut(300);
