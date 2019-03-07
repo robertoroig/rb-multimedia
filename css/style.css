@@ -333,11 +333,16 @@ h3 {
 }
 
 .flex-item{
-    margin: 2vw;
+    margin:2vw;
+}
+.social > img{
+    width: 10vw;
+    height: 10vw;
 }
 
 .social {
-    width:10%
+    width:10vw;
+    height: 10vw;
 }
 
 #footer {
