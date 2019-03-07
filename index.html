@@ -14,6 +14,7 @@
         </script>
         <script type="text/javascript" src="js/script.js"></script>
         
+        
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -24,9 +25,47 @@
     </head>
     <body>
         <!-- Barra de navegación -->
-        <header id="header"></header>
-        <div id="content"></div>
-        <footer id="footer"></footer>
+        <header>
+            <div id="nav_gradient"></div>
+            <nav id="h_nav" class="sticky">
+                <a id="h_title" href="index.html"><span>R&B</span> multimedia</a>
+                <div id="h_menu_bkg"></div>
+                <div id="h_menu_icon" class="h_menu_icon" onclick="showMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul id="h_menu">
+                    <li><a class="clickbox h_link" onclick="load('main.html', '#h_menu_icon');"> Inicio</a></li>
+                    <li><a class="clickbox h_link" onclick="load('proyectos.html', '#h_menu_icon');"> Proyectos</a></li>
+                    <li><a class="clickbox h_link" onclick="load('about.html', '#h_menu_icon');"> Sobre nosotros</a></li>
+                    <li><a class="clickbox h_link" onclick="load('contacto.html', '#h_menu_icon');"> Contacto</a></li>
+                </ul>
+                
+                <div id="audio_player" class="audio_player"> 
+                    <div onclick="player.playAudio()" class="ap_cover"><img src="src/ariana.jpg" alt="Ariana Grande - Be Alright"></div>
+                    <audio id="ap"> 
+                        <source src="src/be_alright.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!--<div id="audio_player" class="audio_player"></div>-->
+            </nav>
+        </header>
         
+        <div id="content"></div>
+        
+        <!-- Pie de página -->
+        <footer id="footer">
+            <div class="flex-container">
+                <div onclick="window.location='http://facebook.com';" class="clickbox flex-item social"><img src="src/facebook.png"/></div>
+                <div onclick="window.location='http://twitter.com';" class="clickbox flex-item social"><img src="src/twitter.png" /></div>
+                <div onclick="window.location='http://instagram.com';" class="clickbox flex-item social"><img src="src/instagram.png" /></div>
+                <div onclick="window.location='http://pinterest.com';" class="clickbox flex-item social"><img src="src/pinterest.png" /></div>
+                <div onclick="window.location='http://linkedin.com';" class="clickbox flex-item social"><img src="src/linkedin.png" /></div>
+            </div>
+            <div class="texto_footer">Programación Multimedia - 2019 | Hecho con amor por R&B multimedia
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/audio.js"></script>
     </body>
 </html>

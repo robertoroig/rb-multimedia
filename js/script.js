@@ -1,9 +1,9 @@
 //ALL: Cargar el header, contenido y footer
 $(function(){
-    $("#header").load("header.html"); 
-    $("#footer").load("footer.html");
-    $("#content").load("main.html")
+    $("#content").load("main.html");
+    
 });
+
 
 function load(url, x) {
     showMenu(x);
@@ -28,15 +28,25 @@ function showMenu(x) {
         $("#h_menu").fadeOut(300);
         $("#h_menu_bkg").fadeOut(300);
         $('body').css({
-            overflow: 'auto'
+            'overflow': 'auto',
         });
+        $("#audio_player").css({
+            'animation-name': 'audioOut',
+            'animation-duration': '0.5s',
+        });
+        $("#audio_player").fadeOut(300);
     }
         
     else {
         $("#h_menu").fadeIn(300);
         $("#h_menu_bkg").fadeIn(300);
         $('body').css({
-            overflow: 'hidden'
+            'overflow': 'hidden',
+        });
+        $("#audio_player").show();
+        $("#audio_player").css({
+            'animation-name': 'audioIn',
+            'animation-duration': '0.5s',
         });
     }
     
@@ -47,3 +57,5 @@ function textAreaAdjust(o) {
   o.style.height = "1px";
   o.style.height = (o.scrollHeight)+"px";
 }
+
+
