@@ -1,7 +1,8 @@
 //ALL: Cargar el header, contenido y footer
 $(function(){
     $("#content").load("main.html");
-    
+    p = new ReproductorAudio(document.getElementById("audio_player"));
+    addEventListeners(p);
 });
 
 
@@ -58,4 +59,22 @@ function textAreaAdjust(o) {
   o.style.height = (o.scrollHeight)+"px";
 }
 
+//REPRODUCTOR AUDIO: Función que añade los listeners
+addEventListeners(reproductor) {
+    //reproductor.controls.children[0].addEventListener("click", repr.previousSong());
+    reproductor.controls.children[1].addEventListener("click", function() {
+        reproductor.playAudio(); 
+    });
+    reproductor.controls.children[2].addEventListener("click", function() {
+        reproductor.nextSong(); 
+    });
+
+    reproductor.audio.addEventListener("play", function(){
+        document.getElementById("ap_play").setAttribute('src', 'src/music/pause.png');
+    });
+
+    reproductor.audio.addEventListener("pause", function(){
+        document.getElementById("ap_play").setAttribute('src', 'src/music/play.png');
+    });
+}
 

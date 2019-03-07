@@ -390,6 +390,7 @@ h3 {
 
 
 .ap_cover {
+    display: block;
     position: relative;
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 4px 0px rgba(143,135,143,1);
@@ -405,3 +406,30 @@ h3 {
     max-width:100%;
     max-height:100%;
 }
+
+.ap_title {
+    position:absolute;
+    display:block;
+    top:6vw;
+    right: 6vw;
+    margin-left:32vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ap_artist {
+    font-weight: 100;
+}
+
+.ap_icon {
+    width: 10vw;
+    margin: 4vw;
+    margin-bottom: 1vw;
+}
+
+.ap_icon > img {
+    width: 100%;
+
+}
+
+.ap_
