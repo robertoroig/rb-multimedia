@@ -294,14 +294,10 @@ h3 {
     width: 15vw;
 }
 
-
-
-
-
 .img_portada {
     top:-23vw;
     position: relative;
-    background-image: url("/src/surface.png");
+    background-image: url("../src/surface.png");
     width: calc(100% + 5.99vw);
     height: 80vw;
     background-position: -8vw;
