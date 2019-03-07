@@ -133,9 +133,8 @@ z-index: 2;}
 }
 
 .texto_footer {
-    font-size: 20px;
+    font-size: 2.5vw;
     color: #FCBEBE;
-    text-align: center;
     text-align: center;
 }
 
@@ -158,6 +157,10 @@ p {
 
 h2 {
     font-size: 10vw;
+}
+
+.aboutus h2 {
+    margin-top: 0
 }
 h3 {
     font-size: 7vw;
@@ -310,3 +313,46 @@ h3 {
     position: absolute;
     overflow: hidden;
 }
+
+.imgUser {
+    width: 30vw;
+    height: 30vw;
+}
+
+.flex-container{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    
+    justify-content:center;
+}
+
+.flex-item{
+    margin:2vw;
+}
+.social > img{
+    width: 12vw;
+    height: 12vw;
+}
+
+.social {
+    width:12vw;
+    height: 12vw;
+}
+
+#footer {
+    margin-top:10vw;
+    margin-bottom:-3vw;
+}
+
+.clickbox {
+    cursor: pointer;
+}
+
+
+

@@ -8,10 +8,17 @@
     p {font-size: 1.5vw;}
     
     /* Barra de navegación */
+    
     #h_title {font-size: 5vw;}
-    #h_menu a {font-size: 6vw;}
+    #h_menu {top:15vw}
+    #h_menu a {font-size: 3vw;}
     #nav_gradient {
         height:18vw;
+    }
+    /* index.html */
+    .imgUser {
+        width: 1vw;
+        height: 1vw
     }
 
     
@@ -124,6 +131,19 @@
         flex-grow: 1;
         padding-left:1vw;
     }
+    /* footer.html */
+    .social {
+        width:4vw;
+        height: 4vw;
+    }
+    .social > img{
+        width: 5vw;
+        height: 5vw;
+        margin: 0vw
+    }
+    .texto_footer {
+        font-size: 1.5vw;
+    }
 } 
 
 /* 
@@ -168,16 +188,25 @@
     .img_portada {
         width: 100%;
         height: 50vw;
-        background-position: 1vw;
+        background-position: 6vw;
         background-size: cover;
-        margin-left:14vw;
+        margin-left:12vw;
         background-repeat: no-repeat;
-        background-size: 80vw;
+        background-size: 79vw;
     }
     h1 {
         font-size: 7vw;
         margin-top: 7vw;
         margin-bottom: 2vw
+    }
+    
+    .aboutus p {
+        font-size: 1vw
+    }
+    
+    .imgUser {
+        width: 10vw;
+        height: 10vw
     }
     
     /* about.html */
@@ -288,5 +317,20 @@
         padding: 1vw;
         margin-left: 0;
         margin: 1vw;
+    }
+    
+    /* footer.html */
+    .social {
+        margin:1vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .social > img {
+        margin:0vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .texto_footer {
+        font-size: 1vw;
     }
 } 
