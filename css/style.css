@@ -567,12 +567,7 @@ video {
 	background:#000;
 }
 
-button {
-	width:16px;
-	border:none;
-	cursor:pointer;
-	background:transparent url('buttons.png') no-repeat 0 0;
-}
+
 
 .pause { background-position:-19px 0; }
 .stop { background-position:-38px 0; }
@@ -649,7 +644,7 @@ progress::-moz-progress-bar { background:#2e52a4; }
 }
 
 
-#dd_current > h3{
+#dd_current > h3 {
     margin-top: 0vw;
     font-weight: 100;
     color: #FCBEBE;
@@ -677,7 +672,6 @@ progress::-moz-progress-bar { background:#2e52a4; }
 }
 
 
-
 .video_controlers {
     
     padding: 2vw;
@@ -695,25 +689,6 @@ progress::-moz-progress-bar { background:#2e52a4; }
     
 }
 
-#b_play {
-}
-
-#b_stop {
-}
-
-#b_pause {
-}
-
-#b_forward {
-}
-
-#b_max {
-}
-
-#videovolume {
-}
-
-
 #myProgress {
     background-color: #ddd;
 }
@@ -722,4 +697,8 @@ progress::-moz-progress-bar { background:#2e52a4; }
     width: 1%;
     height: 30px;
     background-color: #4CAF50;
+}
+
+.vp_controllers {
+    display: inline-flex;
 }
