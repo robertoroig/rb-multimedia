@@ -2,6 +2,28 @@
     <section>
         <div>
             <h2>Proyectos</h2>
+            <div class="proj_flex-container">
+                <div class="proj_flex-item">Simulación</div>
+                <div class="proj_flex-item">Animación</div>
+                <div class="proj_flex-item">Programación Web</div>
+            </div>
+            <div class="simulacion">
+                <div>
+                    <video id="myvideo">
+                        <source src="src/prueba.mp4" type="video/mp4" />
+                    </video>
+                    <div class="video_controlers">
+                        <button id="b_play" onclick ="playVideo()">play</button>
+                        <button id="b_stop" onclick ="stopVideo()">Stop</button>
+                        <button onclick ="pauseVideo()">Pausa</button>
+                        <button id="b_forward" onclick ="forwardVideo()">Forward</button>
+                        <button id="b_max" onclick ="maxVideo()">Maximizar</button>
+                        <input id="videovolume" type="range" min="0" max="1" step="0.01" onchange="volumenVideo()">
+                        <progress id='progress-bar' min='0' max='100' value='0'></progress>
+                    </div>
+                </div>
+                
+            </div>    
         </div>
     </section>
 </article>
