@@ -144,6 +144,43 @@
     .texto_footer {
         font-size: 1.5vw;
     }
+    
+    /* REPRODUCTOR DE MUSICA */
+    .audio_player {
+        left:54%;
+        width:40%;
+        height: 35vw;
+        padding: 4vw;
+    }
+
+    .ap_cover {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .ap_title {
+        top:4vw;
+        left: 18vw;
+        font-weight: 600;
+        text-align: left;
+        margin-right: 4vw;
+    }
+
+    .ap_playback {
+        margin-top:4vw;
+        margin-bottom: 0vw;
+        height:3px;
+    }
+    .bar {
+        top:-4.5vw;
+        left:0;
+        width: 0%;
+    }
+
+    .ap_playback span {
+        font-size: 1.5vw
+    }
+    
 } 
 
 /* 
@@ -334,5 +371,47 @@
     }
     .texto_footer {
         font-size: 1vw;
+    }
+    
+    /* REPRODUCTOR DE MUSICA */
+    .audio_player {
+        left:58%;
+        width:30%;
+        height: 18vw;
+        padding: 2vw;
+    }
+
+    .ap_cover {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .ap_title {
+        top:2vw;
+        left: 11vw;
+        font-weight: 600;
+        text-align: left;
+        margin-right: 0vw;
+    }
+
+    .ap_playback {
+        margin-top:2vw;
+        margin-bottom: 0vw;
+        height:3px;
+    }
+    .bar {
+        top:-2.2vw;
+        left:0;
+        width: 0%;
+    }
+
+    .ap_playback span {
+        font-size: 0.6vw
+    }
+    
+    .ap_icon {
+        width: 2.5vw;
+        margin: 1vw;
+        margin-bottom: 1vw;
     }
 } 
