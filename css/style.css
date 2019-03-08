@@ -457,4 +457,65 @@ h3 {
     position: relative;
 }
 
+.lastprojects_flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.lastprojects_flex-items {
+    background-image: url("../src/cassette.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 53vw;
+    margin-top: 4vw;
+}
+
+.lastprojects_flex-items:hover{
+     box-shadow: 0 2vw 6vw 0 rgba(0, 0, 0, 0.9), 0 2vw 6vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.lastproj_img {
+    z-index: 0;
+    width: 100%;
+}
+
+.lastproj_tittle {
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 6vw;
+    color: white;
+    z-index: 2;
+    position: relative;
+    top: -20vw;
+    margin-left: 2vw;
+}
+
+.lastporj_gradient {
+    background-image: linear-gradient(white, black);
+    width: 100%;
+    height: 51vw;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.lastproj_text {
+    font-size: 3vw;
+    color: white;
+    z-index: 2;
+    width: 95%;
+    position: relative;
+    top: -20vw;
+    margin-left: 2vw;
+}
+
 
