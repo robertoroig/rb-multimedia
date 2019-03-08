@@ -723,3 +723,12 @@ progress::-moz-progress-bar { background:#2e52a4; }
     height: 30px;
     background-color: #4CAF50;
 }
+
+
+
+
+
+.ifrm_processing {
+    width: 100%;
+    height: 150vw;
+}
