@@ -81,18 +81,6 @@
             </nav>
         </header>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <div id="content">
             <article>
                 <section>
@@ -119,17 +107,21 @@
 
                         <div id="projects_containter">
                             <div id="simulacion">
-                                <video id="myvideo">
-                                    <source src="src/prueba.mp4" type="video/mp4" />
+                                <video id="myvideo" poster="src/surprise.png">
+                                    <source src="src/bangerz.mp4" type="video/mp4" />
                                 </video>
-                                <div class="video_controlers">
-                                    <button id="b_play" onclick ="playVideo()">play</button>
-                                    <button id="b_stop" onclick ="stopVideo()">Stop</button>
-                                    <button onclick ="pauseVideo()">Pausa</button>
-                                    <button id="b_forward" onclick ="forwardVideo()">Forward</button>
-                                    <button id="b_max" onclick ="maxVideo()">Maximizar</button>
-                                    <input id="videovolume" type="range" min="0" max="1" step="0.01" onchange="volumenVideo()">
-                                    <progress id='progress-bar' min='0' max='100' value='0'></progress>
+                                <div>
+                                    <div class="video_controlers">
+                                        <button id="b_play" onclick ="playVideo()"> play </button>
+                                        <button id="b_stop" onclick ="stopVideo()"> Stop </button>
+                                        <button id="b_pause" onclick ="pauseVideo()"> Pausa </button>
+                                        <button id="videovolume" onclick="maxvolumenVideo()"> + </button>
+                                        <button id="videovolume" onclick="minvolumenVideo()"> - </button>
+                                        <button id="b_max" onclick ="maxVideo()"> Maximizar </button>
+                                    </div>
+                                    <div id="myProgress">
+                                      <div id="myBar"></div>
+                                    </div>
                                 </div>
                             </div> 
                             <div id="animacion">
@@ -139,12 +131,6 @@
                 </section>
             </article>
         </div>
-        
-        
-        
-        
-        
-        
         
         
         
