@@ -10,31 +10,45 @@ function addListenerProyectos() {
     //MENÚ PROYECTOS
     var menu = document.getElementById("dd_current");
     menu.addEventListener("click", function(){
-        if($("#dd_elements").is(":visible")) {
-            $("#dd_elements").hide();
-            
-            $("#dd_arrow").css({
-                '-webkit-transform': 'rotate(0deg)',
-                'transform': 'rotate(0deg)',
-                'animation-name': 'arrowDown',
-                'animation-duration': '0.5s',
-            });
-        }
-        else {
-            $("#dd_elements").css({
-                "opacity":"0",
-                "display":"block",
-            }).show().animate({opacity:1});
-            
-            $("#dd_arrow").css({
-                '-webkit-transform': 'rotate(180deg)',
-                'transform': 'rotate(180deg)',
-                'animation-name': 'arrowUp',
-                'animation-duration': '0.5s',
-            });
-        }
+        toggleMenuProyectos();
     });
+    
+    
 }
+
+function toggleMenuProyectos() {
+    if($("#dd_elements").is(":visible")) {
+        $("#dd_elements").hide();
+
+        $("#dd_arrow").css({
+            '-webkit-transform': 'rotate(0deg)',
+            'transform': 'rotate(0deg)',
+            'animation-name': 'arrowDown',
+            'animation-duration': '0.5s',
+        });
+    }
+    else {
+        $("#dd_elements").css({
+            "opacity":"0",
+            "display":"block",
+        }).show().animate({opacity:1});
+
+        $("#dd_arrow").css({
+            '-webkit-transform': 'rotate(180deg)',
+            'transform': 'rotate(180deg)',
+            'animation-name': 'arrowUp',
+            'animation-duration': '0.5s',
+        });
+    }
+}
+
+function selectProyecto(id) { //Tipo es el id del div
+    $("#projects_container > div").each(function() {
+        $(this).hide();
+    });
+    $("#"+id).show();
+}
+
 function load(url, x) {
     showMenu(x);
     $("#content").load(url);
