@@ -14,7 +14,7 @@ var g = 0,
   kam = 0,
   masa = 0;
 var dt = 0,
-  t = 0;
+t = 0;
 var i = 0;
 var canvas = null;
 
