@@ -1,45 +1,33 @@
+<article>
+    <section>
+        <div>
+            <h2>Proyectos</h2>
             
-            <article>
-                <section>
-                    <div>
-                        <h2>Proyectos</h2>
-
-                        <div class="proj_flex-container">
-                            <div onclick="selectProyecto('simulacion')" class="clickbox proj_flex-item">Simulación</div>
-                            <div onclick="selectProyecto('animacion')" class="clickbox proj_flex-item">Animación</div>
-                            <div onclick="selectProyecto('web')"  class="clickbox proj_flex-item">Programación Web</div>
-                        </div>
-                        
-                        <div class="dropdown">
-                            <span id="dd_current">
-                                <h3 class="clickbox">Simulación <div id="dd_arrow" class="clickbox arrow-down"></div></h3>
-                            </span>
-                            <div id="dd_elements" class="dropdown-content">
-                                <p onclick="selectProyecto('simulacion'); toggleMenuProyectos()" class="clickbox">Simulación</p>
-                                <p onclick="selectProyecto('animacion'); toggleMenuProyectos()" class="clickbox">Animación</p>
-                                <p onclick="selectProyecto('web'); toggleMenuProyectos()" class="clickbox">Programación Web</p>
-                            </div>
-                        </div>
-
-                        <div id="projects_container">
-                            <div id="simulacion">
-                                <video id="myvideo">
-                                    <source src="src/prueba.mp4" type="video/mp4" />
-                                </video>
-                                <div class="video_controlers">
-                                    <button id="b_play" onclick ="playVideo()">play</button>
-                                    <button id="b_stop" onclick ="stopVideo()">Stop</button>
-                                    <button onclick ="pauseVideo()">Pausa</button>
-                                    <button id="b_forward" onclick ="forwardVideo()">Forward</button>
-                                    <button id="b_max" onclick ="maxVideo()">Maximizar</button>
-                                    <input id="videovolume" type="range" min="0" max="1" step="0.01" onchange="volumenVideo()">
-                                    <progress id='progress-bar' min='0' max='100' value='0'></progress>
-                                </div>
-                            </div> 
-                            <div id="animacion"> Animacion loco</div>
-                            <div id="web"> Web macho</div>
-                        </div>
+            <div class="proj_flex-container">
+                <div class="proj_flex-item">Simulación</div>
+                <div class="proj_flex-item">Animación</div>
+                <div class="proj_flex-item">Programación Web</div>
+            </div>
+            
+            <div id="projects_containter">
+                <div id="simulacion">
+                    <video id="myvideo">
+                        <source src="src/prueba.mp4" type="video/mp4" />
+                    </video>
+                    <div class="video_controlers">
+                        <button id="b_play" onclick ="playVideo()">play</button>
+                        <button id="b_stop" onclick ="stopVideo()">Stop</button>
+                        <button onclick ="pauseVideo()">Pausa</button>
+                        <button id="b_forward" onclick ="forwardVideo()">Forward</button>
+                        <button id="b_max" onclick ="maxVideo()">Maximizar</button>
+                        <input id="videovolume" type="range" min="0" max="1" step="0.01" onchange="volumenVideo()">
+                        <progress id='progress-bar' min='0' max='100' value='0'></progress>
                     </div>
-                </section>
-            </article>
-            <script>addListenerProyectos();</script>
+                </div> 
+                <div id="animacion">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</article>

@@ -1,8 +1,9 @@
 //ALL: Cargar el header, contenido y footer
 $(function(){
-    $("#content").load("main.html");
+    //$("#content").load("main.html");
     p = new ReproductorAudio(document.getElementById("audio_player"));
     addEventListeners(p);
+    addListenerProyectos();
 });
 
 function addListenerProyectos() {

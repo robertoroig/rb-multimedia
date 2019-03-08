@@ -539,6 +539,12 @@ h3 {
 
 
 .proj_flex-container {
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     display:none;
 
     -webkit-flex-flow: row wrap;
@@ -547,9 +553,7 @@ h3 {
 
 .proj_flex-item {
     font-family: 'Poppins', sans-serif;
-    margin: 2vw;
-    margin-top:0;
-    margin-left: 0;
+    margin: 1vw;
     color: #FCBEBE;
 }
 

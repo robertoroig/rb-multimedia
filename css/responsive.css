@@ -217,23 +217,6 @@
         font-size: 1.5vw
     }
     
-    /* proyectos.html */
-    .proj_flex-container {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        margin-left: 0;
-        -webkit-flex-flow: row wrap;
-        justify-content: flex-start;
-    }
-    .proj_flex-item {
-        font-size: 2.0vw
-    }
-    .dropdown {
-        display:none;
-    }
 } 
 
 /* 
@@ -500,10 +483,5 @@
         width: 2.5vw;
         margin: 1vw;
         margin-bottom: 1vw;
-    }
-    
-    /* proyectos.html */
-    .proj_flex-item {
-        font-size: 1.25vw
     }
 } 
