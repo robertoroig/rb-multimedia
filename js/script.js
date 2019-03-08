@@ -1,11 +1,40 @@
 //ALL: Cargar el header, contenido y footer
 $(function(){
-    $("#content").load("main.html");
+    //$("#content").load("main.html");
     p = new ReproductorAudio(document.getElementById("audio_player"));
     addEventListeners(p);
+    addListenerProyectos();
 });
 
-
+function addListenerProyectos() {
+    //MENÚ PROYECTOS
+    var menu = document.getElementById("dd_current");
+    menu.addEventListener("click", function(){
+        if($("#dd_elements").is(":visible")) {
+            $("#dd_elements").hide();
+            
+            $("#dd_arrow").css({
+                '-webkit-transform': 'rotate(0deg)',
+                'transform': 'rotate(0deg)',
+                'animation-name': 'arrowDown',
+                'animation-duration': '0.5s',
+            });
+        }
+        else {
+            $("#dd_elements").css({
+                "opacity":"0",
+                "display":"block",
+            }).show().animate({opacity:1});
+            
+            $("#dd_arrow").css({
+                '-webkit-transform': 'rotate(180deg)',
+                'transform': 'rotate(180deg)',
+                'animation-name': 'arrowUp',
+                'animation-duration': '0.5s',
+            });
+        }
+    });
+}
 function load(url, x) {
     showMenu(x);
     $("#content").load(url);
@@ -93,4 +122,6 @@ r   });
         r.nextSong();
     })
 }
+
+
 

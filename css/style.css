@@ -192,6 +192,7 @@ h3 {
 }
 
 .input_button {
+    color: white;
     font-family: 'Poppins', sans-serif;
     border-radius: 10px;
     border: 0px;
@@ -199,7 +200,6 @@ h3 {
     padding: 3vw;
     margin: 3vw;
     background-color: #FCBEBE;
-    color: white;
     text-align:center;
     margin-left: 25vw;
     width: 40vw;
@@ -545,6 +545,7 @@ h3 {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    display:none;
 
     -webkit-flex-flow: row wrap;
     justify-content: flex-start;
@@ -571,9 +572,7 @@ video {
 }
 
 button {
-	text-indent:-9999px;
 	width:16px;
-	height:16px;
 	border:none;
 	cursor:pointer;
 	background:transparent url('buttons.png') no-repeat 0 0;
@@ -607,6 +606,7 @@ progress::-moz-progress-bar { background:#2e52a4; }
 	border-top:1px solid #2e52a4;
 }
 #media-play-list  h2 { font-size:12px; }
+
 #play-list {
 	padding:0;
 	font-size:12px;
@@ -618,5 +618,66 @@ progress::-moz-progress-bar { background:#2e52a4; }
 	background:transparent url('item.png') no-repeat 0 4px;
 }
 
+
+.arrow-down {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align: middle;
+    border-top: 8px solid #FCBEBE;
+    -webkit-transform: rotate(0deg);
+}
+
+@keyframes arrowUp {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrowDown {
+    from {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+#dd_current > h3{
+    margin-top: 0vw;
+    font-weight: 100;
+    color: #FCBEBE;
+}
+
+.dropdown-content > p {
+    font-weight: 100;
+    font-size: 5vw;
+    color: #FCBEBE;
+    margin:3vw;
+    margin-left: 0;
+}
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+    margin-bottom: 10vw;
+}
 
 
