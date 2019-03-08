@@ -26,6 +26,12 @@ class ReproductorAudio {
             "duration": "3:08",
             "cover": "src/music/covers/boomerang.jpg",
             "file":"src/music/songs/boomerang.mp3",
+        }, {
+            "title": "Be Alright",
+            "artist": "Ariana Grande",
+            "duration": "2:57",
+            "cover": "src/music/covers/be_alright.jpg",
+            "file":"src/music/songs/be_alright.mp3",
         }]
 
         this.img_cover = player.firstElementChild.firstElementChild;

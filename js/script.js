@@ -88,5 +88,9 @@ r   });
         document.getElementById("ap_playback_time").innerHTML = eMinutes + ":" + ("0" + parseInt(eSeconds)).slice(-2) + " / " + r.playlist[r.trackCount].duration;
         document.getElementById("ap_playback_bar").style.width =(elapsedTime/duration)*100 + "%"
     });
+    
+    r.audio.addEventListener("ended", function() {
+        r.nextSong();
+    })
 }
 
