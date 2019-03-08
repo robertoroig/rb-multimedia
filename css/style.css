@@ -677,3 +677,49 @@ progress::-moz-progress-bar { background:#2e52a4; }
 }
 
 
+
+.video_controlers {
+    
+    padding: 2vw;
+    
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    
+    justify-content:space-between;
+    
+}
+
+#b_play {
+}
+
+#b_stop {
+}
+
+#b_pause {
+}
+
+#b_forward {
+}
+
+#b_max {
+}
+
+#videovolume {
+}
+
+
+#myProgress {
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+}

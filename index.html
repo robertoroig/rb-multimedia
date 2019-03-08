@@ -80,9 +80,57 @@
                     
                 </div>
             </nav>
-        </header>
+        </header> 
+        <div id="content">
+            <article>
+                <section>
+                    <div>
+                        <h2>Proyectos</h2>
 
-        <div id="content"> </div>
+                        <div class="proj_flex-container">
+                            <div onclick="selectProyecto('simulacion')" class="clickbox proj_flex-item">Simulación</div>
+                            <div onclick="selectProyecto('animacion')" class="clickbox proj_flex-item">Animación</div>
+                            <div onclick="selectProyecto('web')"  class="clickbox proj_flex-item">Programación Web</div>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <!-- Flecha arriba &#9650; -->
+                            <span id="dd_current">
+                                <h3 class="clickbox">Simulación <div id="dd_arrow" class="clickbox arrow-down"></div></h3>
+                            </span>
+                            <div id="dd_elements" class="dropdown-content">
+                                <p onclick="selectProyecto('simulacion'); toggleMenuProyectos()" class="clickbox">Simulación</p>
+                                <p onclick="selectProyecto('animacion'); toggleMenuProyectos()" class="clickbox">Animación</p>
+                                <p onclick="selectProyecto('web'); toggleMenuProyectos()" class="clickbox">Programación Web</p>
+                            </div>
+                        </div>
+
+                        <div id="projects_container">
+                            <div id="simulacion">
+                                <video id="myvideo" poster="src/surprise.png">
+                                    <source src="src/bangerz.mp4" type="video/mp4" />
+                                </video>
+                                <div>
+                                    <div class="video_controlers">
+                                        <button id="b_play" onclick ="playVideo()"> play </button>
+                                        <button id="b_stop" onclick ="stopVideo()"> Stop </button>
+                                        <button id="b_pause" onclick ="pauseVideo()"> Pausa </button>
+                                        <button id="videovolume" onclick="maxvolumenVideo()"> + </button>
+                                        <button id="videovolume" onclick="minvolumenVideo()"> - </button>
+                                        <button id="b_max" onclick ="maxVideo()"> Maximizar </button>
+                                    </div>
+                                    <div id="myProgress">
+                                      <div id="myBar"></div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="animacion"> Animacion loco</div>
+                            <div id="web"> Web macho</div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
         
         <!-- Pie de página -->
         <footer id="footer">
