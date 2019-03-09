@@ -455,11 +455,9 @@ h3 {
     top:-7vw;
     left:0;
     width: 0%;
-    background-color: #707070;
+    background-color: #FCBEBE;
     position: relative;
 }
-
-
 
 .lastprojects_flex-container {
     padding: 0;
@@ -554,62 +552,6 @@ h3 {
 }
 
 
-#media-player {
-	float:left;
-	padding:1em 1em .5em;
-	background-color:#333;
-}
-
-video {
-	border:1px solid #2e52a4;
-	width:305px;
-	height:160px;
-	background:#000;
-}
-
-
-
-.pause { background-position:-19px 0; }
-.stop { background-position:-38px 0; }
-.volume-plus { background-position:-57px 0; }
-.volume-minus { background-position:-76px 0; }
-.mute { background-position:-95px 0; }
-.unmute { background-position:-114px 0; }
-.replay { background-position:-133px 0; }
-
-progress {
-	color:#fff;
-	font-size:12px;
-	width:172px;
-	height:16px;
-	border:none;
-	margin-right:5px;
-	background:#434343;
-}
-progress::-moz-progress-bar { background:#2e52a4; }
-
-#media-play-list {
-	float:left;
-	clear:both;
-	color:#aaa;
-	width:100%;
-	margin-top:10px;
-	border-top:1px solid #2e52a4;
-}
-#media-play-list  h2 { font-size:12px; }
-
-#play-list {
-	padding:0;
-	font-size:12px;
-	list-style-type:none;
-}
-#play-list li {
-	cursor:pointer;
-	padding-left:15px;
-	background:transparent url('item.png') no-repeat 0 4px;
-}
-
-
 .arrow-down {
     display: inline-block;
     width: 0; 
@@ -671,39 +613,129 @@ progress::-moz-progress-bar { background:#2e52a4; }
     margin-bottom: 10vw;
 }
 
-
-.video_controlers {
-    
-    padding: 2vw;
-    
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    
-    justify-content:space-between;
-    
-}
-
-#myProgress {
-    background-color: #ddd;
-}
-
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: #4CAF50;
-}
-
-.vp_controllers {
-    display: inline-flex;
+.selected {
+    font-weight: 600;
 }
 
 .ifrm_processing {
     width: 100%;
     height: 150vw;
+}
+
+.video_player {
+    background-color: white;
+    padding: 2.5vw;
+    -webkit-box-shadow: 0px -2px 44px -3px rgba(179,179,179,1);
+    -moz-box-shadow: 0px -2px 44px -3px rgba(179,179,179,1);
+    box-shadow: 0px -2px 44px -3px rgba(179,179,179,1);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    height: 75vw;
+    flex-flow: flex-start;
+    z-index:0
+}
+
+.vp_video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.vp_bar {
+    position: relative;
+    width: auto;
+    height: 3px;
+    background-color: #F0F0F0;
+    margin-bottom:3.5vw;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 10px;
+}
+
+.vp_progress-bar {
+    position: relative;
+    background-color: #FCBEBE;
+    height: 3px;
+    top: -4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 10px;
+    width: 0;
+}
+
+.vp_controllers {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:2.5vw;
+}
+
+.vp_controllers div img{
+    width: 8vw;
+}
+
+
+.vp_c_stop {
+    margin-left: 2vw;
+    z-index: 1
+}
+
+.vp_c_volume {
+    margin-left: 3vw;
+    margin-right:-35vw;
+}
+
+.vp_c_duration {
+    font-size: 3vw;
+    margin-top: 2vw;
+    margin-left: 60vw;
+}
+
+.vp_c_max {
+    position:absolute;
+    margin-left: 70vw;
+    float:right;
+}
+
+.vp_c_volume-slider {
+    display: none;
+    position:absolute;
+    -webkit-appearance: none;
+    background: #F0F0F0;
+    border-radius: 10px;
+    outline: none;
+    
+    height: 0.6vw;
+    width:28%;
+    margin-top:3.4vw;
+    z-index:0
+}
+
+.vp_c_volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 10vw;
+    width: 3vw; /* Set a specific slider handle width */
+    height: 3vw; /* Slider handle height */
+    background: #FCBEBE; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.vp_c_volume-slider::-moz-range-thumb {
+    border-radius: 10px;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #FCBEBE; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.vp_c_playpause {
+    z-index: 1
+}
+
+.vp_title {
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-top: 8vw
 }

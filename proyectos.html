@@ -1,55 +1,74 @@
-<script>addListenerProyectos();</script>
+<script> addListenerProyectos(); </script>
+
+
 <article>
     <section>
-        <div>
-            <h2>Proyectos</h2>
+        <h2>Proyectos</h2>
+        <div class="proj_flex-container">
+            <div onclick="selectProyecto('animacion', this)" class="selected clickbox proj_flex-item">Animación</div>
+            <div onclick="selectProyecto('simulacion', this)" class="clickbox proj_flex-item">Simulación</div>
+            <div onclick="selectProyecto('web', this)"  class="clickbox proj_flex-item">Programación Web</div>
+        </div>
 
-            <div class="proj_flex-container">
-                <div onclick="selectProyecto('simulacion')" class="clickbox proj_flex-item">Simulación</div>
-                <div onclick="selectProyecto('animacion')" class="clickbox proj_flex-item">Animación</div>
-                <div onclick="selectProyecto('web')"  class="clickbox proj_flex-item">Programación Web</div>
+        <div class="dropdown">
+            <span id="dd_current">
+                <h3 id="dd_title" class="clickbox selected">Animación <div id="dd_arrow" class="clickbox arrow-down"></div></h3>
+            </span>
+            <div id="dd_elements" class="dropdown-content">
+                <p onclick="selectProyecto('animacion', this); toggleMenuProyectos()" class="clickbox">Animación</p>
+                <p onclick="selectProyecto('simulacion', this); toggleMenuProyectos()" class="clickbox">Simulación</p>
+                <p onclick="selectProyecto('web', this); toggleMenuProyectos()" class="clickbox">Programación Web</p>
             </div>
+        </div>
 
-            <div class="dropdown">
-                <span id="dd_current">
-                    <h3 class="clickbox">Simulación <div id="dd_arrow" class="clickbox arrow-down"></div></h3>
-                </span>
-                <div id="dd_elements" class="dropdown-content">
-                    <p onclick="selectProyecto('simulacion'); toggleMenuProyectos()" class="clickbox">Simulación</p>
-                    <p onclick="selectProyecto('animacion'); toggleMenuProyectos()" class="clickbox">Animación</p>
-                    <p onclick="selectProyecto('web'); toggleMenuProyectos()" class="clickbox">Programación Web</p>
-                </div>
-            </div>
-
-            <div id="projects_container">
-                <div id="simulacion">
-
-                    <!-- REPRODUCTOR DE VIDEO -->
-                    <div id="video_player_1" class="video_player">
-                        <video class="vp_video" poster="src/media/surprise.png">
-                            <source src="src/media/bangerz.mp4" type="video/mp4" />
-                        </video>
-                        <div class="vp_bar">
-                            <div class="vp_controllers">
-                                <div class="clickbox vp_c_playpause"><img src="src/media/play.png"></div>
-                                <div class="clickbox vp_c_stop"><img src="src/media/stop.png"></div>
-                                <div class="clickbox vp_c_volume"><img src="src/media/vol.png"></div> 
-                                | 
-                                <span class="vp_c_duration">0:00/2:34</span>
-                                <div class="clickbox vp_c_max"><img src="src/media/full.png"></div>
-                            </div>
+        <div id="projects_container">
+            <div id="animacion"> 
+                <!-- REPRODUCTOR DE VIDEO 2-->
+                <div id="video_player_2" class="video_player">
+                    <video class="vp_video">
+                        <source src="src/media/animacion.mp4" type="video/mp4" />
+                    </video>
+                    <div class="vp_bar">
+                        <div class="vp_controllers">
+                            <div class="clickbox vp_c_playpause"><img src="src/media/play.png"></div>
+                            <div class="clickbox vp_c_stop"><img src="src/media/stop.png"></div>
+                            <div class="clickbox vp_c_volume"><img src="src/media/vol_max.png"><input class="vp_c_volume-slider" type="range" name="volume" value="75"min="0" max="100"></div> 
+                            <span class="vp_c_duration">0:00/0:00</span>
+                            <div class="clickbox vp_c_max"><img src="src/media/full.png"></div>
                         </div>
-                        <div class="vp_progress-bar"></div>
-                    </div>        
-                </div> 
-                <div id="animacion" style="display: none">
-                    <div id="animacion">
-                        <iframe class="ifrm_processing" src="src/processing/index.html"></iframe>          
                     </div>
-                </div>
-                <div id="web" style="display: none"> Web macho</div>
+                    <div class="vp_progress-bar"></div>
+                    <div class="vp_title">Proyecto Final - Animación (GIM 2019)</div>
+                </div> 
+                <script> $(function(){v2 = new ReproductorVideo(document.getElementById("video_player_2"))});</script>
+            </div>
+            
+            <div id="simulacion" style="display: none">
+                <iframe class="ifrm_processing" src="src/processing/index.html"></iframe>          
             </div>
 
+            <div id="web" style="display: none">
+                <!-- REPRODUCTOR DE VIDEO 1 -->
+                <script> $(function(){v1 = new ReproductorVideo(document.getElementById("video_player_1"))}); </script>
+                <div id="video_player_1" class="video_player">
+                    <video class="vp_video">
+                        <source src="src/media/bangerz.mp4" type="video/mp4" />
+                    </video>
+                    <div class="vp_bar">
+                        <div class="vp_controllers">
+                            <div class="clickbox vp_c_playpause"><img src="src/media/play.png"></div>
+                            <div class="clickbox vp_c_stop"><img src="src/media/stop.png"></div>
+                            <div class="clickbox vp_c_volume"><img src="src/media/vol_max.png"><input class="vp_c_volume-slider" type="range" name="volume" value="75"min="0" max="100"></div> 
+                            <span class="vp_c_duration">0:00/0:00</span>
+                            <div class="clickbox vp_c_max"><img src="src/media/full.png"></div>
+                        </div>
+                    </div>
+                    <div class="vp_progress-bar"></div>
+                    <div class="vp_title">Bangueros Tour - Milagros Cyrios (USA 2013)</div>
+                </div>        
+            </div>
+
+            
         </div>
     </section>
 </article>

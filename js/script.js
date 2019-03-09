@@ -37,11 +37,27 @@ function toggleMenuProyectos() {
     }
 }
 
-function selectProyecto(id) { //Tipo es el id del div
+function selectProyecto(id, elem) { //Tipo es el id del div, elem es elemento que ha seleccionado
+    
+    
     $("#projects_container > div").each(function() {
         $(this).hide();
     });
+    
+    if(elem != undefined) {
+        var parent = elem.parentElement;
+        var children = parent.children;
+        $(children).each(function() {
+            $(this).removeClass('selected');
+        });
+
+        $(elem).addClass('selected');
+    }
+    
     $("#"+id).show();
+    
+    $('#dd_title').html(elem.innerHTML + ' <div id="dd_arrow" class="clickbox arrow-down"></div>');
+    
 }
 
 function load(url, x) {
