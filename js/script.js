@@ -1,6 +1,6 @@
 //ALL: Cargar el contenido
 $(function(){
-    $("#content").load("proyectos.html");
+    $("#content").load("main.html");
 });
   
 function addListenerProyectos() {
