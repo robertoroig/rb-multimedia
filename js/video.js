@@ -75,6 +75,7 @@ class ReproductorVideo {
             }
         });
         
+        // Control del volumen
         this.controllers.children[2].children[0].addEventListener("mouseover", function() {
             $(vp.controllers.children[2].children[1]).fadeIn(300);            
         });
@@ -84,6 +85,7 @@ class ReproductorVideo {
             }, 3000);
         });
         
+        // Botón de maximizar
         this.controllers.children[4].addEventListener("click", function() {
             if (vp.video.requestFullscreen) {
               vp.video.requestFullscreen();

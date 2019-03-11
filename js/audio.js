@@ -5,33 +5,48 @@ class ReproductorAudio {
         this.playlist = [{
             "title": "bloodline",
             "artist": "Ariana Grande",
-            "duration": "3:37",
             "cover": "src/media/covers/bloodline.jpg",
             "file":"src/media/songs/bloodline.mp3",
         }, {
             "title": "Nothing Breaks Like A Heart",
             "artist": "Miley Cyrus",
-            "duration": "3:37",
             "cover": "src/media/covers/nblah.png",
             "file":"src/media/songs/nblah.mp3",
         }, {
             "title": "Low Key",
             "artist": "Mabel",
-            "duration": "3:51",
             "cover": "src/media/covers/low_key.jpg",
             "file":"src/media/songs/low_key.mp3",
         }, {
             "title": "Boomerang",
             "artist": "Imagine Dragons",
-            "duration": "3:08",
             "cover": "src/media/covers/boomerang.jpg",
             "file":"src/media/songs/boomerang.mp3",
         }, {
             "title": "Be Alright",
             "artist": "Ariana Grande",
-            "duration": "2:57",
             "cover": "src/media/covers/be_alright.jpg",
             "file":"src/media/songs/be_alright.mp3",
+        }, {
+            "title": "Serial Killer",
+            "artist": "Lana del Rey",
+            "cover": "src/media/covers/ldr.jpg",
+            "file":"src/media/songs/serial_killer.mp3",
+        }, {
+            "title": "Because of You",
+            "artist": "Lana del Rey",
+            "cover": "src/media/covers/ldr.jpg",
+            "file":"src/media/songs/bcofyou.mp3",
+        }, {
+            "title": "Queen of Disaster",
+            "artist": "Lana del Rey",
+            "cover": "src/media/covers/ldr.jpg",
+            "file":"src/media/songs/qod.mp3",
+        }, {
+            "title": "Backfire",
+            "artist": "Lana del Rey",
+            "cover": "src/media/covers/ldr.jpg",
+            "file":"src/media/songs/backfire.mp3",
         }]
 
         this.img_cover = player.firstElementChild.firstElementChild;
@@ -115,10 +130,19 @@ class ReproductorAudio {
         this.audio.addEventListener("timeupdate", function() {
             var elapsedTime = r.audio.currentTime;
             var duration = r.audio.duration;
-
+            
+            if(isNaN(duration))
+                duration = 0;
+            
             var eMinutes = Math.floor(elapsedTime / 60);
             var eSeconds = elapsedTime - eMinutes * 60;
-            document.getElementById("ap_playback_time").innerHTML = eMinutes + ":" + ("0" + parseInt(eSeconds)).slice(-2) + " / " + r.playlist[r.trackCount].duration;
+            var tMinutes = Math.floor(duration / 60);
+            var tSeconds = duration - tMinutes * 60;
+            
+            
+            
+            document.getElementById("ap_playback_time").innerHTML = eMinutes + ":" + ("0" + parseInt(eSeconds)).slice(-2) + "/" + tMinutes + ":" + ("0" + parseInt(tSeconds)).slice(-2);
+            
             document.getElementById("ap_playback_bar").style.width =(elapsedTime/duration)*100 + "%"
         });
 
