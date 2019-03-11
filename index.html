@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- HTML5 Properties -->
-        <title>R&B multimedia</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- JavaScript -->
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-        </script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/video.js"></script>
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    
-    </head>
-    
-    <body>
-        <!-- Barra de navegación -->
-        <header>
-            <div id="nav_gradient"></div>
-            <nav id="h_nav" class="sticky">
-                <a id="h_title" href="index.html"><span>R&B</span> multimedia</a>
-                <div id="h_menu_bkg"></div>
-                <div id="h_menu_icon" class="h_menu_icon" onclick="showMenu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+<head>
+    <!-- HTML5 Properties -->
+    <title>R&B multimedia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div id="nav_gradient"></div>
+        <nav id="h_nav" class="sticky">
+            <a id="h_title" href="index.html"><span>R&B</span> multimedia</a>
+            <div id="h_menu_bkg"></div>
+            <div id="h_menu_icon" class="h_menu_icon" onclick="showMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="h_menu">
+                <li><a class="clickbox h_link" onclick="load('main.html', '#h_menu_icon');"> Inicio</a></li>
+                <li><a class="clickbox h_link" onclick="load('proyectos.html', '#h_menu_icon');"> Proyectos</a></li>
+                <li><a class="clickbox h_link" onclick="load('about.html', '#h_menu_icon');"> Sobre nosotros</a></li>
+                <li><a class="clickbox h_link" onclick="load('contacto.html', '#h_menu_icon');"> Contacto</a></li>
+            </ul>
+
+            <div id="audio_player" class="audio_player">
+                <div class="ap_cover"><img id="cover_img" src="" alt=""></div>
+                <div id="ap_title" class="ap_title"></div>
+
+                <audio id="ap">
+                    <source></audio>
+
+                <div id="ap_playback" class="ap_playback">
+                    <span id="ap_playback_time">0:00 / 2:03</span>
                 </div>
-                <ul id="h_menu">
-                    <li><a class="clickbox h_link" onclick="load('main.html', '#h_menu_icon');"> Inicio</a></li>
-                    <li><a class="clickbox h_link" onclick="load('proyectos.html', '#h_menu_icon');"> Proyectos</a></li>
-                    <li><a class="clickbox h_link" onclick="load('about.html', '#h_menu_icon');"> Sobre nosotros</a></li>
-                    <li><a class="clickbox h_link" onclick="load('contacto.html', '#h_menu_icon');"> Contacto</a></li>
-                </ul>
-                
-                <div id="audio_player" class="audio_player"> 
-                    <div class="ap_cover"><img id="cover_img" src="" alt=""></div>
-                    <div id="ap_title" class="ap_title"></div>
-                    
-                    <audio id="ap"><source></audio>
-                    
-                    <div id="ap_playback" class="ap_playback">
-                        <span id="ap_playback_time">0:00 / 2:03</span>
-                    </div>
-                    <div id="ap_playback_bar" class="ap_playback bar"></div>
-                    <div id="ap_controls" class="flex-container ap_controls">
-                        <div class="clickbox flex-item ap_icon"><img id="ap_backwards" src="src/media/back.png"></div>
-                        <div class="clickbox flex-item ap_icon"><img id="ap_play" src="src/media/play.png"></div>
-                        <div class="clickbox flex-item ap_icon"><img id="ap_next" src="src/media/next.png"></div>
-                    </div>
-                    
+                <div id="ap_playback_bar" class="ap_playback bar"></div>
+                <div id="ap_controls" class="flex-container ap_controls">
+                    <div class="clickbox flex-item ap_icon"><img id="ap_backwards" src="src/media/back.png"></div>
+                    <div class="clickbox flex-item ap_icon"><img id="ap_play" src="src/media/play.png"></div>
+                    <div class="clickbox flex-item ap_icon"><img id="ap_next" src="src/media/next.png"></div>
                 </div>
-            </nav>
-        </header> 
-        
-        <div id="content">
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+    </div>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <div class="flex-container">
+            <div onclick="window.location='http://facebook.com';" class="clickbox flex-item social"><img src="src/facebook.png" /></div>
+            <div onclick="window.location='http://twitter.com';" class="clickbox flex-item social"><img src="src/twitter.png" /></div>
+            <div onclick="window.location='http://instagram.com';" class="clickbox flex-item social"><img src="src/instagram.png" /></div>
+            <div onclick="window.location='http://pinterest.com';" class="clickbox flex-item social"><img src="src/pinterest.png" /></div>
+            <div onclick="window.location='http://linkedin.com';" class="clickbox flex-item social"><img src="src/linkedin.png" /></div>
         </div>
-        
-        <!-- Pie de página -->
-        <footer id="footer">
-            <div class="flex-container">
-                <div onclick="window.location='http://facebook.com';" class="clickbox flex-item social"><img src="src/facebook.png"/></div>
-                <div onclick="window.location='http://twitter.com';" class="clickbox flex-item social"><img src="src/twitter.png" /></div>
-                <div onclick="window.location='http://instagram.com';" class="clickbox flex-item social"><img src="src/instagram.png" /></div>
-                <div onclick="window.location='http://pinterest.com';" class="clickbox flex-item social"><img src="src/pinterest.png" /></div>
-                <div onclick="window.location='http://linkedin.com';" class="clickbox flex-item social"><img src="src/linkedin.png" /></div>
-            </div>
-            <div class="texto_footer">Programación Multimedia - 2019 | Hecho con amor por R&B multimedia
-            </div>
-        </footer>
-        <script type="text/javascript" src="js/audio.js"></script>
-    </body>
+        <div class="texto_footer">Programación Multimedia - 2019 | Hecho con amor por R&B multimedia
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/audio.js"></script>
+</body>
+
 </html>
