@@ -47,12 +47,17 @@ class ReproductorAudio {
             "artist": "Lana del Rey",
             "cover": "src/media/covers/ldr.jpg",
             "file":"src/media/songs/backfire.mp3",
+        }, {
+            "title": "Meet Me In The Pale Moonlight",
+            "artist": "Lana del Rey",
+            "cover": "src/media/covers/ldr.jpg",
+            "file":"src/media/songs/mmitpm.mp3",
         }]
 
         this.img_cover = player.firstElementChild.firstElementChild;
         this.title = player.children[1];
         this.audio = player.children[2];
-        this.controls = player.children[5];
+        this.controls = player.children[4];
         
         this.setSong(this.playlist[this.trackCount].file);
         

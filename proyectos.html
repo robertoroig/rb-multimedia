@@ -29,6 +29,7 @@
                         <source src="src/media/animacion.mp4" type="video/mp4" />
                     </video>
                     <div class="vp_bar">
+                        <div class="vp_progress-bar"></div>
                         <div class="vp_controllers">
                             <div class="clickbox vp_c_playpause"><img src="src/media/play.png"></div>
                             <div class="clickbox vp_c_stop"><img src="src/media/stop.png"></div>
@@ -37,7 +38,6 @@
                             <div class="clickbox vp_c_max"><img src="src/media/full.png"></div>
                         </div>
                     </div>
-                    <div class="vp_progress-bar"></div>
                     <div class="vp_title">Proyecto Final - Animación (GIM 2019)</div>
                 </div> 
                 <script> $(function(){v2 = new ReproductorVideo(document.getElementById("video_player_2"))});</script>
@@ -48,13 +48,13 @@
             </div>
 
             <div id="web" style="display: none">
-                <!-- REPRODUCTOR DE VIDEO 1 -->
-                <script> $(function(){v1 = new ReproductorVideo(document.getElementById("video_player_1"))}); </script>
+                <!-- REPRODUCTOR DE VIDEO 1-->
                 <div id="video_player_1" class="video_player">
                     <video class="vp_video">
                         <source src="src/media/prueba.mp4" type="video/mp4" />
                     </video>
                     <div class="vp_bar">
+                        <div class="vp_progress-bar"></div>
                         <div class="vp_controllers">
                             <div class="clickbox vp_c_playpause"><img src="src/media/play.png"></div>
                             <div class="clickbox vp_c_stop"><img src="src/media/stop.png"></div>
@@ -63,9 +63,9 @@
                             <div class="clickbox vp_c_max"><img src="src/media/full.png"></div>
                         </div>
                     </div>
-                    <div class="vp_progress-bar"></div>
                     <div class="vp_title">Robot Test</div>
-                </div>        
+                </div>
+                <script> $(function(){v1 = new ReproductorVideo(document.getElementById("video_player_1"))});</script>
             </div>
 
             

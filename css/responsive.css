@@ -202,13 +202,9 @@
     .ap_playback {
         margin-top:4vw;
         margin-bottom: 0vw;
-        height:3px;
+
     }
-    .bar {
-        top:-4.5vw;
-        left:0;
-        width: 0%;
-    }
+
 
     .ap_playback span {
         font-size: 1.5vw
@@ -249,21 +245,13 @@
     }
 
     .vp_bar {
-        width: auto;
-        height: 3px;
         margin-bottom:3.5vw;
         margin-top: 2vw;
         margin-left: 2vw;
         margin-right: 2vw;
     }
 
-    .vp_progress-bar {
-        height: 3px;
-        top: -4vw;
-        margin-left: 2vw;
-        margin-right: 2vw;
-        width: 0;
-    }
+
 
     .vp_controllers {
         margin-top:1vw;
@@ -565,13 +553,8 @@
     .ap_playback {
         margin-top:2vw;
         margin-bottom: 0vw;
-        height:3px;
     }
-    .bar {
-        top:-2.2vw;
-        left:0;
-        width: 0%;
-    }
+
 
     .ap_playback span {
         font-size: 0.6vw
@@ -608,21 +591,13 @@
     }
 
     .vp_bar {
-        width: auto;
-        height: 3px;
         margin-bottom:3.5vw;
         margin-top: 1.5vw;
         margin-left: 1vw;
         margin-right: 1vw;
     }
 
-    .vp_progress-bar {
-        height: 3px;
-        top: -3.8vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-        width: 0;
-    }
+
 
     .vp_controllers {
         margin-top:1vw;

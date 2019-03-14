@@ -2,9 +2,9 @@ class ReproductorVideo {
     constructor(player) {
         this.player = player;
         this.video = player.children[0];
-        this.controllers = player.children[1].firstElementChild;
+        this.controllers = player.children[1].children[1]; //Controles (0, progress bar)
         this.timeElapsed = this.controllers.children[3];
-        this.progressBar = player.children[2];
+        this.progressBar = player.children[1].children[0];
         this.progressBarWidth = this.progressBar.offsetWidth;
         this.addEventListeners();
     }
