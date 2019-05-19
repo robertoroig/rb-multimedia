@@ -1,8 +1,8 @@
 # rb-multimedia
 Portfolio para la asignatura Programación Multimedia del Grado en Ingeniería Multimedia.
-Realizado por:
--Roberto Roig
--Beatriz Ruiz
+\nRealizado por:
+\n-Roberto Roig
+\n-Beatriz Ruiz
 
 
 ## Acceder a la página
